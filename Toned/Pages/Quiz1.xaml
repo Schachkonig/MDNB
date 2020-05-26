@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Toned.Quiz1"
+             BackgroundImageSource="BackGround.jpg">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="1"  Source="Logo.png" Grid.Column="1"></Image>
+        <Label Text="Please, enter your name!" Grid.Row="3" Grid.Column="1"></Label>
+        <Entry x:Name="Name" Grid.Row="5" Grid.Column="1" Placeholder="Name" ClearButtonVisibility="WhileEditing" Keyboard="Default" ></Entry>
+        <ImageButton x:Name="Continue" Grid.Row="7" Grid.Column="1" Clicked="Continue_Clicked" Source="ButCo.png" Aspect="AspectFill" ></ImageButton>
+    </Grid>
+</ContentPage>

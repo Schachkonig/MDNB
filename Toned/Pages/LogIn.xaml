@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Toned.LogIn"
+             BackgroundImageSource="BackGround.jpg">
+    <AbsoluteLayout>
+
+        <Image Source="@drawable/Logo.png" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               AbsoluteLayout.LayoutBounds="110,110,200,200"></Image>
+        <Entry x:Name="Mail"
+                Placeholder="Your e-mail"
+                AbsoluteLayout.LayoutBounds="50,350,285,40"></Entry>
+        <Entry x:Name="UserName"
+                IsPassword="True"
+                Placeholder="Your passworld"
+                AbsoluteLayout.LayoutBounds="50,400,285,40"></Entry>
+        <Button x:Name ="Log_In"
+                Text="Login in"
+                BorderRadius="100"
+                BackgroundColor="Aqua"
+                AbsoluteLayout.LayoutBounds="50,500,285,40"
+                ></Button>
+        <Button Text="Want to create an account?"
+                BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutBounds="50,550,285,40"
+                FontSize="Micro"
+                x:Name="LoginIn"
+                ></Button>
+    </AbsoluteLayout>
+</ContentPage>

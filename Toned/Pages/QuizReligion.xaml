@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Toned.Pages.QuizReligion"
+             BackgroundImageSource="BackGround.jpg">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="1"  Source="Logo.png" Grid.Column="1"></Image>
+        <Label Grid.Row="3" Grid.Column="1" Text="Please choose your religion" ></Label>
+        <Picker x:Name="PickerReligion" Grid.Row="5" Grid.Column="1"  >
+            <Picker.Items>
+                <x:String>Christian</x:String>
+                <x:String>Muslim</x:String>
+                <x:String>Hindu</x:String>
+                <x:String>Sikh</x:String>
+                <x:String>Jewish</x:String>
+                <x:String>None</x:String>
+            </Picker.Items>
+        </Picker>
+        <ImageButton x:Name="Continue" Grid.Row="7" Grid.Column="1" Clicked="CreateAcc_Clicked" Source="ButCo.png" Aspect="AspectFill" ></ImageButton>
+    </Grid>
+</ContentPage>
